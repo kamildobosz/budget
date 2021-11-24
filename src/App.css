@@ -1,4 +1,4 @@
-.App {
+.app {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,37 +96,192 @@ h1{
   font-size: 50px;
 }
 
-@media  screen and (max-width: 480px) {
-  .App{
+@media  screen and (orientation: portrait){
+  .app{
     flex-direction: column;
+    max-height: 100vh;
   }
 
   .left{
+    height: 45vh;
     width: 100vw;
   }
-  .money h1{
-    font-size: 30px;
 
+  .budget{
+    min-height: 55vh;
+    height: 55vh;
+    width: 100vw;
+  }
+}
+
+@media  screen and (orientation: landscape){
+  
+}
+
+@media (max-width: 320px){
+  h1{
+    font-size: 25px;
+    margin: 20px 0;
+  }  
+
+  h2{
+    margin: 5px 0;
+    font-size: 22px;
+    text-shadow: 1px 2px rgba(0,0,0, .7) ;
   }
 
-input{
-  width: 200px;
-  margin: 5px;
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  button{
+    width: 140px;
+  }
+
+  input{
+    margin: 10px 0;
+    width: 150px
+  }
 }
 
-button{ 
-  min-width: 200px
-}
+@media (min-width: 360px){
+  h1{
+    font-size: 25px;
+    margin: 20px 0;
+  }  
 
-.budget{
-  width: 100vw;
-  margin-top: 10px;
-  min-height: 62vh;
-}
+  h2{
+    margin: 5px 0;
+    font-size: 22px;
+    text-shadow: 1px 2px rgba(0,0,0, .7) ;
+  }
 
-h2{
-  font-size: 25px;
-  text-shadow: 1px 2px rgba(0,0,0,0.7);
-}
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 
+  button{
+    width: 140px;
+  }
+
+  input{
+    margin: 10px 0;
+    width: 150px
+  }
 }
+@media (min-width: 360px) and (orientation: portrait){}
+@media (min-width: 410px){
+  
+}
+@media (min-width: 410px) and (orientation: portrait){
+  h1{
+    font-size: 28px;
+    margin: 30px 0;
+  }
+
+  button{
+    width: 180px;
+  }
+
+  input{
+    width: 190px;
+  }
+
+  h2{
+    font-size: 28px;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 530px){}
+@media (min-width: 530px) and (orientation: portrait){}
+@media (min-width: 768px){
+  
+}
+@media (min-width: 768px) and (orientation: portrait){
+  .budget{
+    height: 70vh;
+  }
+  .left{
+    height: 30vh;
+  }
+  h1{
+    font-size: 35px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  button{
+    width: 200px;
+  }
+
+  input{
+    width: 220px;
+  }
+}
+@media (min-width: 1024px){
+  .app{
+    flex-direction: row
+  }
+  .budget{
+    height: 100vh;
+    width: 60vw;
+  }
+  .left{
+    height: 100vh;
+    width: 40vw;
+  }
+
+  .form{
+    margin-top: 240px
+  }
+
+  h1{
+    margin: 30px 10px;
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  button{
+    width: 220px;
+  }
+  input{
+    width: 250px;
+  }
+}
+@media (min-width: 1024px) and (orientation: portrait){
+  .app{
+    flex-direction: column;
+  }
+  .form{
+    margin-top: 30px;
+  }
+
+  .budget{
+    height: 70vh;
+    width: 100vw;
+  }
+  .left{
+    height: 30vh;
+    width: 100vw;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px){}
+@media (min-width: 1280px) and (orientation: portrait){}
+@media (min-width: 1600px){}
+@media (min-width: 1600px) and (orientation: portrait){}

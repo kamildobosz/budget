@@ -36,7 +36,7 @@ const Form = (props) => {
   };
 
   return (
-    <div className="Form">
+    <div className="form">
       <h1>Twój budżet wynosi: {myMoney} zł</h1>
       <form>
         <button className="plusMinus" onClick={handleType}>
